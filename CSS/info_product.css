@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #2a2f32
+}
+
+img {
+    max-width: 100%;
+}
+
+.navbar{
+    padding: 0;
+}
+.container-fluid {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+#navbarNavDropdown > ul > li > a {
+    align-self: center;
+    font-size: 20px;
+    margin: 10px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 115%;
+    color: #fff;
+}
+.dropdown > ul >li > a, .dropdown > ul {
+    background-color: rgb(60, 129, 194);
+    color: #fff;
+    font-family: 'Mukta', sans-serif;
+}
+#navbarNavDropdown > ul > li > a:hover, .dropdown > ul >li > a:hover{
+    background-color:rgb(64, 66, 82);
+    border-radius: 15px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.logoNav {
+    height: 70px;
+    width: 120px;
+    margin-left: 20px;
+    margin-right: 20px
+}
+.logo img{
+    height: 1200%;
+    width: 100%;
+}
+
+.contenido1 img{
+    height: 160%;
+    width: 135%;
+}
+
+.contenedor{
+    /* Medidas para que este centrado */
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+
+    display: grid;
+    grid-gap: 20px;
+
+
+    grid-template-columns: repeat(3, minmax(200px, auto));
+    grid-template-rows: repeat(4,minmax(200px, auto));
+
+    grid-template-areas: "logo logo logo"
+                         "contenido1 contenido2 contenido2"
+                         "contenido1 contenido2 contenido2"
+                         "footer footer footer";
+}
+
+.contenedor .logo{
+    grid-area: logo;
+    justify-self: center;
+    height: 15px;
+}
+
+.contenedor .contenido1{
+    background-color: #2d4858;
+    padding: 15px;
+    border-radius: 4px;
+    grid-area: contenido1;
+}
+.contenedor .contenido1 figure{
+    margin-top: 80px;
+    margin-left: 3px;
+}
+
+/* cambia el tamaño de una imagen en especifico (producto5 de periféricos) */
+#producto5_perife{
+    height: 90%;
+    width: 100%;
+}
+
+.contenedor .contenido2{
+    background-color: #2d4858;
+    padding: 20px;
+    border-radius: 4px;
+    grid-area:contenido2 ;
+}
+.contenedor .contenido2 section{
+    padding-top: 40px;
+}
+
+/* Modifica las listas de cada producto */
+.contenedor .contenido2 section ul{
+    padding: 10px;
+}
+.contenedor .contenido2 section li{
+    list-style: none;
+    margin: 10px;
+}
+.contenedor .contenido2 section li p{
+    display: inline;
+}
+
+.contenedor .footer{
+    grid-area: footer;
+}
+
+.letra{
+    color:#fff;
+    font-family: 'Mukta', sans-serif;
+}
+
+.titulo, .footer h2{
+    color: initial;
+    font-family: 'Azeret Mono', monospace;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 20px 20px 20px;
+    margin-bottom: 20px;
+}
+.footer{
+    background-color: #354853;
+}
+.footer p a{
+    border: solid 1px rgb(60, 129, 194);
+}
+.footer .letra{
+    margin-left:20px
+}
+.footer a{
+    color:inherit;
+}
+.footer h2{
+    margin-left: 15px;
+    width: 850px
+}
+
+@media screen and (max-width: 768px){
+    .contenedor{
+
+        grid-template-columns: repeat(3, minmax(100px, auto));
+        grid-template-rows: repeat(4,minmax(190px, auto));
+
+        grid-template-areas:  "logo logo logo"
+                               "contenido1 contenido1 contenido1"
+                               "contenido2 contenido2 contenido2"
+                               "footer footer footer";
+    }
+
+    .titulo, .footer h2{
+        color: initial;
+        font-family: 'Azeret Mono', monospace;
+        width: 90%;
+        display: inline-block;
+        text-align: center;
+        box-shadow: 20px 20px 20px;
+    }
+}
+
+/* scroll personalizado */
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    border-radius: 7px;
+}

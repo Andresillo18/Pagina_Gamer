@@ -1,0 +1,269 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #2a2f32
+}
+
+img {
+    max-width: 100%;
+}
+
+.navbar{
+    padding: 0;
+}
+.container-fluid {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+#navbarNavDropdown > ul > li > a {
+    align-self: center;
+    font-size: 20px;
+    margin: 10px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 115%;
+    color: #fff;
+}
+.dropdown > ul >li > a, .dropdown > ul {
+    background-color: rgb(60, 129, 194);
+    color: #fff;
+    font-family: 'Mukta', sans-serif;
+}
+#navbarNavDropdown > ul > li > a:hover, .dropdown > ul >li > a:hover{
+    background-color:rgb(64, 66, 82);
+    border-radius: 15px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.logoNav {
+    height: 70px;
+    width: 120px;
+    margin-left: 20px;
+    margin-right: 20px
+}
+.logo img{
+    height: 1200%;
+    width: 100%;
+}
+
+/* Cambia el tamaño de cada imagen */
+.contenido1 img, .contenido2 img, .contenido3 img, .contenido4 img, .contenido5 img, .contenido6 img{
+    height: 70%;
+    width: 80%;
+}
+
+.contenedor{
+    /* Medidas para que este centrado */
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+
+    display: grid;
+    grid-gap: 20px;
+
+
+    grid-template-columns: repeat(3, minmax(200px, auto));
+    grid-template-rows: repeat(5,minmax(200px, auto));
+
+    grid-template-areas: "logo logo logo"
+                         "titulo titulo titulo"
+                         "contenido1 contenido2 contenido3"
+                         "contenido4 contenido5 contenido6"
+                         "footer footer footer";
+}
+
+.contenedor .logo{
+    grid-area: logo;
+    justify-self: center;
+    height: 15px;
+}
+
+/* Titulo de la página */
+.contenedor .titulo_principal{
+    grid-area: titulo;
+    margin: 60px auto auto 260px;
+    border: double 5px rgb(60, 129, 194);
+    padding: 8px;
+}
+.contenedor .titulo_principal h1{
+    font-family: 'Merriweather', serif;
+    color: #fff;
+}
+/* Titulos de la galeria con pocas palabras */
+.contenedor #titulo_principal{
+    grid-area: titulo;
+    margin: 60px auto auto 420px;
+    border: double 5px rgb(60, 129, 194);
+    padding: 8px;
+}
+.contenedor #titulo_principal h1{
+    font-family: 'Merriweather', serif;
+    color: #fff;
+}
+
+.contenedor .contenido1{
+    background-color: #2d4858;
+    padding: 10px;
+    border-radius: 4px;
+    grid-area: contenido1;
+}
+
+/* Acomoda las palabras de cada sección de la galeria */
+.contenedor .contenido1 p, .contenedor .contenido2 p, .contenedor .contenido3 p, .contenedor .contenido4 p, .contenedor .contenido5 p, .contenedor .contenido6 p{
+    padding: 5px;
+    background-color: #475a64;
+    margin-left:-10px ;
+    margin-right: -10px;
+    border-bottom-right-radius:80% ;
+    color: #fff;
+    overflow: hidden;
+}
+.contenedor  .contenido1 a, .contenedor .contenido2 a, .contenedor .contenido3 a, .contenedor .contenido4 a, .contenedor .contenido5 a, .contenedor .contenido6 a{
+    text-decoration: none;
+}
+
+/* Centra la imagen de cada galeria */
+.contenedor  .contenido1 a figure, .contenedor .contenido2 a figure, .contenedor .contenido3 a figure, .contenedor .contenido4 a figure, .contenedor .contenido5 a figure, .contenedor .contenido6 a figure{
+   margin-left: 40px;
+}
+
+/* El resto de campos de la galeria */
+.contenedor .contenido2{
+    background-color: #2d4858;
+    padding: 10px;
+    border-radius: 4px;
+    grid-area:contenido2 ;
+}
+
+.contenedor .contenido3{
+    background-color: #2d4858;
+    padding: 10px;
+    border-radius: 4px;
+    grid-area:contenido3 ;
+}
+.contenedor .contenido4{
+    background-color: #2d4858;
+    padding: 10px;
+    border-radius: 4px;
+    grid-area:contenido4 ;
+}
+.contenedor .contenido5{
+    background-color: #2d4858;
+    padding: 10px;
+    border-radius: 4px;
+    grid-area:contenido5 ;
+}
+.contenedor .contenido6{
+    background-color: #2d4858;
+    padding: 10px;
+    border-radius: 4px;
+    grid-area:contenido6 ;
+}
+
+/* footer */
+.contenedor .footer{
+    grid-area: footer;
+}
+
+.letra{
+    color:#fff;
+    font-family: 'Mukta', sans-serif;
+}
+.titulo, .footer h2{
+    color: initial;
+    font-family: 'Azeret Mono', monospace;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 20px 20px 20px;
+    margin-bottom: 20px;
+}
+.redesSoc, .redesSoc a{
+    color:#fff;
+    font-family: 'Kaisei Tokumin', serif;
+    position:sticky;
+    top: 0;
+    margin: 10px;
+}
+.footer{
+    background-color: #354853;
+}
+.footer p a{
+    border: solid 1px rgb(60, 129, 194);
+}
+.footer .letra{
+    margin-left:20px
+}
+.footer a{
+    color:inherit;
+}
+.footer h2{
+    margin-left: 15px;
+    width: 850px
+}
+
+@media screen and (max-width: 768px){
+    .contenedor{
+
+        grid-template-columns: repeat(3, minmax(100px, auto));
+        grid-template-rows: repeat(8,minmax(200px, auto));
+
+        grid-template-areas:  "logo logo logo"
+                              "titulo titulo titulo"
+                               "contenido1 contenido1 contenido1 "
+                               "contenido2 contenido2 contenido2 "
+                               "contenido3 contenido3 contenido3 "
+                               "contenido4 contenido4 contenido4"
+                               "contenido5 contenido5 contenido5"
+                               "contenido6 contenido6 contenido6"
+                               "footer footer footer";
+    }
+    .contenedor .titulo_principal{
+        grid-area: titulo;
+        margin: 1px auto auto 50px;
+        border: double 5px rgb(60, 129, 194);
+        padding: 8px;
+    }
+
+    .titulo, .footer h2{
+        color: initial;
+        font-family: 'Azeret Mono', monospace;
+        width: 90%;
+        display: inline-block;
+        text-align: center;
+        box-shadow: 20px 20px 20px;
+    }
+
+    .redesSoc, .redesSoc a{
+        color:#fff;
+        font-family: 'Kaisei Tokumin', serif;
+        margin: 10px;
+       justify-content: center;
+    }
+    .redesSoc{
+        /* padding-left: 50px; */
+        position: relative;
+        top: 20px;
+        left: 190px;
+    }
+
+    /* Acomuda el título para que este centrado cuando la pantalla sea de un movil */
+    .contenedor #titulo_principal{
+        grid-area: titulo;
+        margin: 60px auto auto 170px;
+        border: double 5px rgb(60, 129, 194);
+        padding: 8px;
+    }
+}
+
+/* scroll personalizado */
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    border-radius: 7px;
+}

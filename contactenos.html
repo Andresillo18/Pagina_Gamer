@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>heyheyGamers</title>
+
+  <meta name="description"
+    content="Una de las mejores tiendas virtuales donde te ofrecemos lo mejor para tu ordenador, sin importar si eres o no gamer, podrás obtener los mejor al mejor precio y ofertas" />
+  <meta name="author" content="AndresV" />
+  <link rel="shortcut icon" href="assets/images/HeyGamersLogo.png" type="image/x-icon" />
+  <!-- CSS Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="CSS/contactenos.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet" />
+
+  <!-- https://material.io/resources/icons/?style=outline -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html"><img src="/assets/images/HeyGamersLogo.png" alt="logo"
+            class="logoNav"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/quienes_somos.html">Quienes somos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li> <a class="dropdown-item" href="/accesorios_html/accesorios.html"> <span
+                      class="material-icons-outlined">
+                      cable
+                    </span> Accesorios</a></li>
+                <li><a class="dropdown-item" href="/componentes_html/componentes.html"><span
+                      class="material-icons-outlined">
+                      smart_button
+                    </span> Componentes</a></li>
+                <li><a class="dropdown-item" href="/ordenadores_html/ordenadores.html"><span
+                      class="material-icons-outlined">
+                      computer
+                    </span> Ordenadores</a></li>
+                <li><a class="dropdown-item" href="/perifericos_html/perifericos.html"><span
+                      class="material-icons-outlined">
+                      headset_mic
+                    </span> Periféricos</a></li>
+                <li><a class="dropdown-item" href="/sillas_html/sillas.html"><span class="material-icons-outlined">
+                      event_seat
+                    </span> Sillas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contactenos.html">Contáctanos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="contenedor">
+    <div class="logo">
+      <a href="/index.html" class="placeLogo"><img src="assets/images/HeyGamersLogo.png" alt="Logo" title="Inicio" /></a>
+    </div>
+
+    <div class="contenido1 letra">
+      <h1 class="titulo">Contáctenos</h1>
+      <p>
+        Somos un proveedor de soluciones y actuamos como agentes del cambio en la transformación digital y creemos que
+        la tecnología, de la mano de la estrategia, son puntos que al contactarse generan una potente herramienta de
+        innovación y transformación. Por eso te queremos ofrecer la mejor asistencia. Puede encontrarnos en la tienda
+        física en Palmares, Alajuela, Costa Rica para conocer los productos o si tiene algún inconveniente puede
+        contactarnos al correo: andresv1804@gmail.com O al celular: 88003384. Ahora si deseas comprar en línea también
+        te ofrecemos el servicio express disponible en todo occidente, te dejamos un formulario para puedas dejarnos tus
+        datos y hacerte llegar tu pedido:
+      </p>
+    </div>
+
+    <div class="contenido2 letra">
+      <h2 class="titulo">Formulario del servicio express</h2>
+
+      <form action="" method="POST">
+        <fieldset class="seccion1">
+          <legend class="subtitulos">Datos Personales:</legend>
+          <label for="name" class="titles">Nombre:</label>
+          <input type="text" id="name" minlength="3" maxlength="15" placeholder="Escribe su nombre.." required
+            autofocus />
+
+          <label class="posicion1" for="surname" class="subtitulo">Apellidos:</label>
+          <input type="text" id="surname" minlength="5" maxlength="20" placeholder="Escribe sus apellidos.." required />
+
+          <label for="id" class="titles">Identificación:</label>
+          <input type="text" id="id" minlength="5" maxlength="15" required />
+
+          <label for="number" class="titles">Número teléfonico:</label>
+          <input type="number" id="number" min="1" max="10" placeholder="0000-0000" required />
+
+          <label for="email" class="titles">Email:</label>
+          <input type="email" id="email" required />
+        </fieldset>
+
+        <fieldset>
+          <legend class="subtitulo">Domicilio:</legend>
+          <label for="provincia" class="titles">Provincia</label>
+          <input type="text" id="provincia" value="Alajuela" readonly />
+
+          <label for="cantones" class="titles">Cantón:</label>
+          <input type="list" list="cantones" />
+          <datalist id="cantones">
+            <select name="cantones" id="">
+              <option value="Grecia"></option>
+              <option value="San Ramón"></option>
+              <option value="Atenas"></option>
+              <option value="Palmares"></option>
+              <option value="Naranjo"></option>
+              <option value="Orotina"></option>
+            </select>
+          </datalist>
+
+          <label class="mucho_texto1" for="direccion" class="titles">Dirección Exacta:</label>
+          <textarea name="direccion" id="direccion" cols="30" rows="4"></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend class="subtitulo">Productos a comprar:</legend>
+          <h2>Clasificación del producto</h2>
+          <input type="checkbox" id="1" name="producto" value="perifericos" />
+          <label for="1" class="titles">Periféricos</label>
+
+          <input type="checkbox" id="2" name="producto" value="sillas" />
+          <label for="2" class="titles">Sillas</label>
+
+          <input type="checkbox" id="3" name="producto" value="accesorios" />
+          <label for="3" class="titles">Accesorios</label>
+
+          <input type="checkbox" id="4" name="producto" value="componentes" />
+          <label for="4" class="titles">Componentes</label>
+
+          <input type="checkbox" id="5" name="producto" value="ordenadores" />
+          <label for="5" class="titles" S>Ordenadores</label>
+
+          <label class="mucho_texto2" for="espeficacion" class="titles">Especifique el producto:</label>
+          <textarea name="descripcionProduc" id="espeficacion" cols="30" rows="4"
+            placeholder="Especifique sus caracterisicas y el precio que desea"></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend class="subtitulo">Pago:</legend>
+          <h2>Manera de pago</h2>
+
+          <label for="sinpe" class="titles">Sinpe</label>
+          <input type="radio" value="Sinpe" name="pago" id="sinpe" />
+
+          <label for="credito" class="titles">Tarjeta Crédito</label>
+          <input type="radio" value="Tarjeta Credito" name="pago" id="credito" />
+
+          <label for="debito" class="titles">Tarjeta Débito</label>
+          <input type="radio" value="Tarjeta debito" name="pago" id="debito" />
+
+          <label for="efectivo" class="titles">Efectivo</label>
+          <input type="radio" value="efectivo" name="pago" id="efectivo" />
+
+          <label for="dia" class="titles">Fecha de entrega:</label>
+          <input type="date" />
+        </fieldset>
+
+        <div id="liveAlertPlaceholder"></div>
+        <button type="button" class="btn btn-primary" id="liveAlertBtn">Enviar</button>
+
+      </form>
+    </div>
+
+    <aside class="redesSoc">
+      <h2>¡Contactenos!</h2>
+      <a href="https://www.youtube.com/" target="_blank"><img src="assets/images/youtube.png" alt="youtubeLogo"
+          title="Nuestro Canal" /></a>
+
+      <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="assets/images/instagram.png"
+          alt="instagramLogo" title="Nuestro Instagram" /></a>
+    </aside>
+
+    <footer class="footer">
+      <h2>Información</h2>
+      <p class="letra">
+        Si desea mas información puede contactarnos al correo:
+        andresv1804@gmail.com O al celular: 88003384, sin ningún problema le
+        ayudaremos en su búsqueda.
+      </p>
+
+      <p class="letra">®copyright-2021</p>
+    </footer>
+    <!-- Fin div contenedor -->
+  </div>
+
+  <!-- Menu responsive -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+
+    <!-- Script (JS) para la función de cierre y mensaje de la alerta -->
+    <script>var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+      var alertTrigger = document.getElementById('liveAlertBtn')
+  
+      function alert(message, type) {
+        var wrapper = document.createElement('div')
+        wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+  
+        alertPlaceholder.append(wrapper)
+      }
+  
+      if (alertTrigger) {
+        alertTrigger.addEventListener('click', function () {
+          alert('Gracias, su infomación fue enviada satisfactoriamente!!', 'success')
+          // success es para el color
+        })
+      }</script>
+</body>
+</html>
