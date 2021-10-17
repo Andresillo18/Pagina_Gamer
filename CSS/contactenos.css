@@ -38,6 +38,7 @@ img {
     background-color:rgb(64, 66, 82);
     border-radius: 15px;
     font-family: 'Roboto Mono', monospace;
+    transition: .5s ease all;
 }
 
 /* Personaliza el logo de la barra de tareas */

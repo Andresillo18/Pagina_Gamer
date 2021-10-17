@@ -5,12 +5,19 @@
 body{
     margin: 0;
     font-family: sans-serif;
-    background-color: #2a2f32
+    background-color: #2a2f32  
 }
-
 /* Así las imagenes no se encogerán al cambiar el tamaño de la ventana */
 img {
     max-width: 100%;
+}
+p{
+    font-size: 110%;
+}
+
+/* Modificaciones de reveal */
+.reveal__img2{
+    height: 15em;
 }
 
 /* Colores y moduficaciones de la caja del navbar (no esta en el grid porque ya estaba hecho antes de incluir el contenido al grid) */
@@ -39,6 +46,7 @@ img {
     background-color:rgb(64, 66, 82);
     border-radius: 15px;
     font-family: 'Roboto Mono', monospace;
+    transition: .5s ease all;
 }
 
 /* Personaliza el logo de la barra de tareas */
@@ -58,17 +66,16 @@ img {
     /* Medidas para que este centrado */
     width: 90%;
     max-width: 1000px;
-    margin: 20px auto;
+    margin: 55px auto 20px;
 
     display: grid;
     grid-gap: 20px;
 
 
     grid-template-columns: repeat(3, minmax(200px, auto));
-    grid-template-rows: repeat(4,minmax(200px, auto));
+    grid-template-rows: repeat(3,minmax(150px, auto));
 
-    grid-template-areas: "logo logo logo"
-                         "contenido1 contenido1 redesSoc"
+    grid-template-areas: "contenido1 contenido1 redesSoc"
                          "contenido2 contenido2 redesSoc"
                          "footer footer footer";
 }
@@ -88,14 +95,14 @@ img {
     grid-area: contenido1;
 }
 
-/* Para centrar las imagenes del carousel */
+/* Para centrar las imagenes del carousel
 .carousel div img{
     margin-left: 30%;
 }
 .contenido1 img{
     height: 50%;
     width: 40%;
-}
+} */
 
 /* Segunda fila del grid */
 .contenedor .contenido2{
@@ -126,7 +133,7 @@ img {
     display: inline-block;
     text-align: center;
     box-shadow: 20px 20px 20px;
-    margin-bottom: 20px;
+    margin-bottom: 38px;
 }
 .redesSoc, .redesSoc a{
     color:#fff;
