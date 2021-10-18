@@ -22,9 +22,12 @@
 
   <!-- https://material.io/resources/icons/?style=outline -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
-  
+
   <!-- usando una CDN para el uso de animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- CDN para la biblioteca AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -52,23 +55,24 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <!-- Aquí se le aplican los estilos animados de animate.style -->
-                <li> <a class="dropdown-item animate__animated animate__shakeX animate__repeat-2" href="/accesorios_html/accesorios.html"> <span
-                      class="material-icons-outlined">
+                <li> <a class="dropdown-item animate__animated animate__shakeX animate__repeat-2"
+                    href="/accesorios_html/accesorios.html"> <span class="material-icons-outlined">
                       cable
                     </span> Accesorios</a></li>
-                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2" href="/componentes_html/componentes.html"><span
-                      class="material-icons-outlined">
+                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2"
+                    href="/componentes_html/componentes.html"><span class="material-icons-outlined">
                       smart_button
                     </span> Componentes</a></li>
-                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2" href="/ordenadores_html/ordenadores.html"><span
-                      class="material-icons-outlined">
+                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2"
+                    href="/ordenadores_html/ordenadores.html"><span class="material-icons-outlined">
                       computer
                     </span> Ordenadores</a></li>
-                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2" href="/perifericos_html/perifericos.html"><span
-                      class="material-icons-outlined">
+                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2"
+                    href="/perifericos_html/perifericos.html"><span class="material-icons-outlined">
                       headset_mic
                     </span> Periféricos</a></li>
-                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2" href="/sillas_html/sillas.html"><span class="material-icons-outlined">
+                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2"
+                    href="/sillas_html/sillas.html"><span class="material-icons-outlined">
                       event_seat
                     </span> Sillas</a></li>
               </ul>
@@ -96,15 +100,15 @@
       <a href="producto1perifericos.html">
         <figure>
           <img src="/assets/images/mouse_HAVITT_MS1006_RGB.jpg" alt="mouse_rgb" class="tablaImg" />
-        <a href="producto1perifericos.html">
-          <p>₡5,500</p>
-        <a href="producto1perifericos.html">
-          <p>Mouse HAVITT MS1006 RGB</p>
-        </a>
-      </a>
+          <a href="producto1perifericos.html">
+            <p>₡5,500</p>
+            <a href="producto1perifericos.html">
+              <p>Mouse HAVITT MS1006 RGB</p>
+            </a>
+          </a>
     </div>
 
-    <div class="contenido2 letra">
+    <div data-aos="flip-up" class="contenido2 letra">
       <!--producto 2 Periféricos -->
       <a href="producto2perifericos.html">
         <figure>
@@ -120,8 +124,8 @@
       </a>
     </div>
 
-    <div class="contenido3 letra">
-       <!--producto 3 Periféricos -->
+    <div data-aos="fade-left" class="contenido3 letra">
+      <!--producto 3 Periféricos -->
       <a href="producto3perifericos.html">
         <figure>
           <img src="/assets/images/MOUSEOPTIC-NEGRO.jpg" alt="mouseopticoNegro" class="tablaImg" />
@@ -135,7 +139,7 @@
       </a>
     </div>
 
-    <div class="contenido4 letra">
+    <div data-aos="fade-right" class="contenido4 letra">
       <!--producto 4 Periféricos -->
       <a href="producto4perifericos.html">
         <figure>
@@ -150,7 +154,7 @@
       </a>
     </div>
 
-    <div class="contenido5 letra">
+    <div data-aos="flip-up" class="contenido5 letra">
       <!--producto 5 Ordenadores -->
       <a href="producto5perifericos.html">
         <figure>
@@ -165,7 +169,7 @@
       </a>
     </div>
 
-    <div class="contenido6 letra">
+    <div data-aos="fade-left" class="contenido6 letra">
       <!--producto 6 Periféricos -->
       <a href="producto6perifericos.html">
         <figure>
@@ -180,7 +184,7 @@
       </a>
     </div>
 
-    <footer class="footer">
+    <footer data-aos="flip-up" class="footer">
       <h2>Información</h2>
       <p class="letra">
         Si desea mas información puede contactarnos al correo:
@@ -204,6 +208,8 @@
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
 
+  <!-- Scripts para AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>

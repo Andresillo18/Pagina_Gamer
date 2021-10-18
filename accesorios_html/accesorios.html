@@ -11,20 +11,23 @@
     content="Una de las mejores tiendas virtuales donde te ofrecemos lo mejor para tu ordenador, sin importar si eres o no gamer, podrás obtener los mejor al mejor precio y ofertas" />
   <meta name="author" content="AndresV" />
   <link rel="shortcut icon" href="assets/images/HeyGamersLogo.png" type="image/x-icon" />
+
+  
   <!-- CSS Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" href="/CSS/gallery.css" />
-
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet" />
-
+  
   <!-- https://material.io/resources/icons/?style=outline -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
-
+  
   <!-- usando una CDN para el uso de animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  
 </head>
 
 <body>
@@ -101,7 +104,7 @@
       </a>
     </div>
 
-    <div class="contenido2 letra">
+    <div data-aos="flip-up" class="contenido2 letra">
          <!--producto 2 accesorios -->
          <a href="producto2accesorio.html">
           <figure>
@@ -112,7 +115,7 @@
         </a>
     </div>
 
-    <div class="contenido3 letra">
+    <div data-aos="fade-left" class="contenido3 letra">
       <!--producto 3 accesorios -->
       <a href="producto3accesorio.html">
         <figure>
@@ -123,7 +126,7 @@
       </a>
     </div>
 
-    <div class="contenido4 letra">
+    <div data-aos="fade-right" class="contenido4 letra">
        <!--producto 4 accesorios -->
        <a href="producto4accesorio.html">
         <figure>
@@ -134,7 +137,7 @@
       </a>
     </div>
 
-    <div class="contenido5 letra">
+    <div data-aos="flip-up" class="contenido5 letra">
        <!--producto 5 accesorios -->
        <a href="producto5accesorio.html">
         <figure>
@@ -145,7 +148,7 @@
       </a>
     </div>
 
-    <div class="contenido6 letra">
+    <div data-aos="fade-left" class="contenido6 letra">
         <!--producto 6 accesorios -->
         <a href="producto6accesorio.html">
           <figure>
@@ -156,7 +159,7 @@
         </a>
     </div>
 
-    <footer class="footer">
+    <footer data-aos="flip-up" class="footer">
       <h2>Información</h2>
       <p class="letra">
         Si desea mas información puede contactarnos al correo:
@@ -180,6 +183,12 @@
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
 
+      <!-- Scripts para AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

@@ -20,6 +20,61 @@ p{
     height: 15em;
 }
 
+/* ************* Modificación del botón de likes ******************** */
+.corazon-btn{
+    position: absolute;
+    top: 50%;
+    left: 23%;
+}
+.contenido{
+    padding: 13px 16px;
+    border: 2px solid #eae2e1;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contenido .corazon{
+    height: 90px;
+    width: 90px;
+}
+/* Cambia de color cuando esta activo el corazón y la clase "corazon-active" este incluida */
+.contenido.corazon-activo{
+    border-color: #f9b9c4;
+    background: #fbd0d8;
+}
+.corazon{
+    position: absolute;
+    /* Posiciona el corazón */
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 21%;
+    background: url("/assets/images/corazones.png");
+    background-size: 2900%;
+    height: 90px;
+    width: 90px;
+}
+.text{
+    font-size: 21px;
+    margin-left: 30px;
+    color: grey;
+    font-family: 'Montserrat',sans-serif;
+}
+.text.corazon-activo{
+    color: #000;
+}
+.corazon.corazon-activo{
+    /* El primer valor es el nombre de la animación, segundo el tiempo, tercero como debe avanzar y el cuarto el retraso de esta */
+    /* Esto funciona con el keyframe */
+    animation: animate .8s steps(28) 1;
+}
+@keyframes animate {
+    0%{
+      background-position: left;
+    }
+    100%{
+      background-position: right;
+    }
+}
+
 /* Colores y moduficaciones de la caja del navbar (no esta en el grid porque ya estaba hecho antes de incluir el contenido al grid) */
 .navbar{
     padding: 0;
@@ -95,15 +150,6 @@ p{
     grid-area: contenido1;
 }
 
-/* Para centrar las imagenes del carousel
-.carousel div img{
-    margin-left: 30%;
-}
-.contenido1 img{
-    height: 50%;
-    width: 40%;
-} */
-
 /* Segunda fila del grid */
 .contenedor .contenido2{
     background-color: #354853;
@@ -168,8 +214,7 @@ p{
         grid-template-columns: repeat(3, minmax(100px, auto));
         grid-template-rows: repeat(5,minmax(200px, auto));
 
-        grid-template-areas:  "logo logo logo"
-                               "contenido1 contenido1 contenido1"
+        grid-template-areas:   "contenido1 contenido1 contenido1"
                                "contenido2 contenido2 contenido2"
                                "redesSoc redesSoc redesSoc"
                                "footer footer footer";
@@ -191,11 +236,15 @@ p{
        justify-content: center;
     }
     .redesSoc{
-        /* padding-left: 50px; */
         position: relative;
         top: 20px;
-        left: 190px;
-     }
+        left: 90px;
+    }
+    .corazon-btn{
+        position: absolute;
+        top: 20%;
+        left: 53%;
+    }
 }
 
 /* scroll personalizado */
