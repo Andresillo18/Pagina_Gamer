@@ -153,7 +153,39 @@ img {
     width: 850px
 }
 
-@media screen and (max-width: 768px){
+
+/* Estilos para hacer la img del producto más grande */
+.imgBig{
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    display: none;
+}
+.imgBig__activa{
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    display: block;
+    /* transition: .5s ease all;    */
+}
+.imgBig .img{
+    position: relative;
+    left: 21%;
+    top: 8%;
+    z-index: 1;
+    width: 60%;
+}
+.contenedor-filtro{
+    filter: blur(5px);
+}
+.imgBig__btn{
+    position: absolute;
+    left: 78.5%;
+    top: 8%;
+    z-index: 2;
+}
+
+@media screen and (max-width: 800px){
     .contenedor{
 
         grid-template-columns: repeat(3, minmax(100px, auto));
@@ -172,6 +204,26 @@ img {
         display: inline-block;
         text-align: center;
         box-shadow: 20px 20px 20px;
+    }
+    .imgBig{
+        position: absolute;
+        width: 150%;
+        height: 100%;
+    }
+    .imgBig .img{
+        position: relative;
+        left: 1%;
+        top: 42%;
+        z-index: 1;
+        width: 65%;
+        height: 60%;
+    }
+    .imgBig__btn{
+        position: absolute;
+        left: 60%;
+        top: 42%;
+        /* Con esto se coloca encima de otros 2 elementos */
+        z-index: 2;
     }
 }
 

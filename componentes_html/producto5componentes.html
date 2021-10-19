@@ -82,14 +82,22 @@
     </nav>
   </header>
 
-  <div class="contenedor">
+   <!-- Contenedor de la imagen más grande del producto oculta -->
+   <div class="imgBig" id="imgBig">
+    <img onclick="closeImg();" class="img" src="/assets/images/ram_oferta.jpg" alt="Memoria RAM PATRIOT">
+    <button onclick="closeImg();" id="imgBig__btn" class="imgBig__btn"><span class="material-icons-outlined">
+        cancel
+      </span> </button>
+  </div>
+
+  <div id="contenedor" class="contenedor">
     <div class="logo">
       <a href="/index.html" class="placeLogo"><img src="/assets/images/HeyGamersLogo.png" alt="Logo"
           title="Inicio" /></a>
     </div>
 
     <div class="contenido1 letra">
-      <figure><img src="/assets/images/ram_oferta.jpg" alt="Memoria RAM PATRIOT"></figure>
+      <figure><img onclick="agrandarImg();" src="/assets/images/ram_oferta.jpg" alt="Memoria RAM PATRIOT"></figure>
     </div>
 
     <div class="contenido2 letra">
@@ -145,6 +153,6 @@
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
 
+    <script src="/JS/funtions.js" type="text/javaScript" async></script>
 </body>
-
 </html>

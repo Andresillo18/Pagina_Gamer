@@ -14,6 +14,8 @@
   <!-- CSS Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <!-- Link a los estilos propios -->
   <link rel="stylesheet" href="/CSS/info_product.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -55,23 +57,24 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <!-- Aquí se le aplican los estilos animados de animate.style -->
-                <li> <a class="dropdown-item animate__animated animate__shakeX animate__repeat-2" href="/accesorios_html/accesorios.html"> <span
-                      class="material-icons-outlined">
+                <li> <a class="dropdown-item animate__animated animate__shakeX animate__repeat-2"
+                    href="/accesorios_html/accesorios.html"> <span class="material-icons-outlined">
                       cable
                     </span> Accesorios</a></li>
-                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2" href="/componentes_html/componentes.html"><span
-                      class="material-icons-outlined">
+                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2"
+                    href="/componentes_html/componentes.html"><span class="material-icons-outlined">
                       smart_button
                     </span> Componentes</a></li>
-                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2" href="/ordenadores_html/ordenadores.html"><span
-                      class="material-icons-outlined">
+                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2"
+                    href="/ordenadores_html/ordenadores.html"><span class="material-icons-outlined">
                       computer
                     </span> Ordenadores</a></li>
-                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2" href="/perifericos_html/perifericos.html"><span
-                      class="material-icons-outlined">
+                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2"
+                    href="/perifericos_html/perifericos.html"><span class="material-icons-outlined">
                       headset_mic
                     </span> Periféricos</a></li>
-                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2" href="/sillas_html/sillas.html"><span class="material-icons-outlined">
+                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2"
+                    href="/sillas_html/sillas.html"><span class="material-icons-outlined">
                       event_seat
                     </span> Sillas</a></li>
               </ul>
@@ -85,14 +88,22 @@
     </nav>
   </header>
 
-  <div class="contenedor">
+  <!-- Contenedor de la imagen más grande del producto oculta -->
+  <div class="imgBig" id="imgBig">
+    <img onclick="closeImg();" class="img" src="/assets/images/mousepad_REDRAGON_RGB.jpg" alt="Mouse pad">
+    <button onclick="closeImg();" id="imgBig__btn" class="imgBig__btn"><span class="material-icons-outlined">
+        cancel
+      </span> </button>
+  </div>
+
+  <div id="contenedor" class="contenedor">
     <div class="logo">
       <a href="/index.html" class="placeLogo"><img src="/assets/images/HeyGamersLogo.png" alt="Logo"
           title="Inicio" /></a>
     </div>
 
     <div class="contenido1 letra">
-      <figure><img src="/assets/images/mousepad_REDRAGON_RGB.jpg" alt="Mouse pad"></figure>
+      <figure><img onclick="agrandarImg();" src="/assets/images/mousepad_REDRAGON_RGB.jpg" alt="Mouse pad"></figure>
     </div>
 
     <div class="contenido2 letra">
@@ -116,11 +127,11 @@
             </span>
             <p>Dimensiones: 350 x 250 mm</p>
           </li>
-          <li> <span class="material-icons-outlined">
+          <!-- <li> <span class="material-icons-outlined">
               cable
             </span>
             <p></p>
-          </li>
+          </li> -->
           <li> <span class="material-icons-outlined">
               cable
             </span>
@@ -159,6 +170,7 @@
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
 
+  <script src="/JS/funtions.js" type="text/javaScript" async></script>
 </body>
 
 </html>
