@@ -104,6 +104,7 @@ label.mucho_texto1{
     padding: 20px;
     border-radius: 4px;
     grid-area: contenido1;
+    
 }
 .contenedor .contenido1 p{
     padding-right: 20px;
@@ -117,7 +118,6 @@ label.mucho_texto1{
     border-radius: 4px;
     grid-area:contenido2 ;
 }
-
 /* Es una columna del grid para colocar las redes sociales */
 .contenedor .redesSoc{
     grid-area: redesSoc;
@@ -164,6 +164,63 @@ label.mucho_texto1{
     margin-left: 15px;
     width: 850px
 }
+
+/* CLASES PARA LOS FORMULARIOS */
+.formulario__input-error {
+	font-size:18px;
+	position: relative;
+    left: 10%;
+    font-weight: 300;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.form__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #d31212;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.form__mensaje-activo {
+	display: block;
+}
+
+.form__mensaje p {
+	margin: 0;
+}
+
+.form__grupo-btn-enviar{
+    margin: 17px;
+    position: relative;
+    left: 45%;
+}
+
+.form__mensaje-exito {
+    margin: 15px;
+    position: relative;
+    left: -29%;
+	font-size: 25px;
+	color: #119200;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	/* display: none; */
+}
+.form__mensaje-exito-activo {
+	display: block;
+}
+
+.form__grupo-correcto .form__label {
+	color: #1ed12d;
+}
+.form__grupo-incorrecto .form__label {
+	color: #bb2929;
+}
+
 
 /* El media query afecta y hace cambios cuando la pantalla tiene una cantidad de pixeles determinada */
 @media screen and (max-width: 768px){

@@ -52,23 +52,24 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <!-- Aquí se le aplican los estilos animados de animate.style -->
-                <li> <a class="dropdown-item animate__animated animate__shakeX animate__repeat-2" href="/accesorios_html/accesorios.html"> <span
-                      class="material-icons-outlined">
+                <li> <a class="dropdown-item animate__animated animate__shakeX animate__repeat-2"
+                    href="/accesorios_html/accesorios.html"> <span class="material-icons-outlined">
                       cable
                     </span> Accesorios</a></li>
-                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2" href="/componentes_html/componentes.html"><span
-                      class="material-icons-outlined">
+                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2"
+                    href="/componentes_html/componentes.html"><span class="material-icons-outlined">
                       smart_button
                     </span> Componentes</a></li>
-                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2" href="/ordenadores_html/ordenadores.html"><span
-                      class="material-icons-outlined">
+                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2"
+                    href="/ordenadores_html/ordenadores.html"><span class="material-icons-outlined">
                       computer
                     </span> Ordenadores</a></li>
-                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2" href="/perifericos_html/perifericos.html"><span
-                      class="material-icons-outlined">
+                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2"
+                    href="/perifericos_html/perifericos.html"><span class="material-icons-outlined">
                       headset_mic
                     </span> Periféricos</a></li>
-                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2" href="/sillas_html/sillas.html"><span class="material-icons-outlined">
+                <li><a class="dropdown-item animate__animated animate__shakeX animate__repeat-2"
+                    href="/sillas_html/sillas.html"><span class="material-icons-outlined">
                       event_seat
                     </span> Sillas</a></li>
               </ul>
@@ -84,7 +85,8 @@
 
   <div class="contenedor">
     <div class="logo">
-      <a href="/index.html" class="placeLogo"><img src="assets/images/HeyGamersLogo.png" alt="Logo" title="Inicio" /></a>
+      <a href="/index.html" class="placeLogo"><img src="assets/images/HeyGamersLogo.png" alt="Logo"
+          title="Inicio" /></a>
     </div>
 
     <div class="contenido1 letra">
@@ -103,93 +105,136 @@
     <div class="contenido2 letra">
       <h2 class="titulo">Formulario del servicio express</h2>
 
-      <form action="" method="POST">
+      <form action="" class="form" id="form" method="POST">
         <fieldset class="seccion1">
           <legend class="subtitulos">Datos Personales:</legend>
-          <label for="name" class="titles">Nombre:</label>
-          <input type="text" id="name" minlength="3" maxlength="15" placeholder="Escribe su nombre.." required
-            autofocus />
 
-          <label class="posicion1" for="surname" class="subtitulo">Apellidos:</label>
-          <input type="text" id="surname" minlength="5" maxlength="20" placeholder="Escribe sus apellidos.." required />
+          <div id="form__nombre">
+            <label for="name" class="titles form__label">Nombre:</label>
+            <input type="text" id="name" name="nombre" minlength="3" maxlength="15" placeholder="Escribe su nombre.."
+              required autofocus />
+            <p class="formulario__input-error">Ingrese su nombre!</p>
+          </div>
 
-          <label for="id" class="titles">Identificación:</label>
-          <input type="text" id="id" minlength="5" maxlength="15" required />
+          <div id="form__apellidos">
+            <label class=" subtitulo posicion1 form__label" for="surname">Apellidos:</label>
+            <input type="text" id="surname" name="apellido" minlength="5" maxlength="20"
+              placeholder="Escribe sus apellidos.." required />
+            <p class="formulario__input-error">Ingrese sus apellidos!</p>
+          </div>
 
-          <label for="number" class="titles">Número teléfonico:</label>
-          <input type="number" id="number" min="1" max="10" placeholder="0000-0000" required />
+          <div id="form__id">
+            <label for="id" class="titles form__label">Identificación:</label>
+            <input type="text" id="id" name="Identificación" minlength="5" maxlength="15" required />
+            <p class="formulario__input-error">Ingrese su Identificación!</p>
+          </div>
 
-          <label for="email" class="titles">Email:</label>
-          <input type="email" id="email" required />
+          <div id="form__telefono">
+            <label for="number" class="titles form__label">Número teléfonico:</label>
+            <input type="number" id="number" name="telefono" min="1" max="10" placeholder="8888-8888" required />
+            <p class="formulario__input-error">Ingrese su teléfono!</p>
+          </div>
+
+          <div id="form__email form__label">
+            <label for="email" class="titles">Email:</label>
+            <input type="email" name="correo" id="email" required />
+            <p class="formulario__input-error">Ingrese su correo!</p>
+          </div>
+
         </fieldset>
 
-        <fieldset>
+        <fieldset id="seccion2" class="seccion2">
           <legend class="subtitulo">Domicilio:</legend>
-          <label for="provincia" class="titles">Provincia</label>
-          <input type="text" id="provincia" value="Alajuela" readonly />
 
-          <label for="cantones" class="titles">Cantón:</label>
-          <input type="list" list="cantones" />
-          <datalist id="cantones">
-            <select name="cantones" id="">
-              <option value="Grecia"></option>
-              <option value="San Ramón"></option>
-              <option value="Atenas"></option>
-              <option value="Palmares"></option>
-              <option value="Naranjo"></option>
-              <option value="Orotina"></option>
-            </select>
-          </datalist>
+          <div id="form__provincia">
+            <label for="provincia" class="titles">Provincia</label>
+            <input type="text" id="provincia" value="Alajuela" readonly />
+          </div>
 
-          <label class="mucho_texto1" for="direccion" class="titles">Dirección Exacta:</label>
-          <textarea name="direccion" id="direccion" cols="30" rows="4"></textarea>
+          <div id="form__canton">
+            <label for="cantones" class="titles">Cantón:</label>
+            <input type="list" list="cantones" />
+            <datalist id="cantones">
+              <select name="cantones" id="">
+                <option value="Grecia"></option>
+                <option value="San Ramón"></option>
+                <option value="Atenas"></option>
+                <option value="Palmares"></option>
+                <option value="Naranjo"></option>
+                <option value="Orotina"></option>
+              </select>
+            </datalist>
+            <p class="formulario__input-error">Falta escoger un cantón!</p>
+          </div>
+
+          <div class="form__direccion">
+            <label class="mucho_texto1" for="direccion" class="titles">Dirección Exacta:</label>
+            <textarea name="direccion" id="direccion" cols="30" rows="4"></textarea>
+          </div>
+
         </fieldset>
 
-        <fieldset>
+        <fieldset class="seccion3">
           <legend class="subtitulo">Productos a comprar:</legend>
           <h2>Clasificación del producto</h2>
-          <input type="checkbox" id="1" name="producto" value="perifericos" />
-          <label for="1" class="titles">Periféricos</label>
 
-          <input type="checkbox" id="2" name="producto" value="sillas" />
-          <label for="2" class="titles">Sillas</label>
+          <div>
+            <input type="checkbox" id="1" name="producto" value="perifericos" />
+            <label for="1" class="titles">Periféricos</label>
 
-          <input type="checkbox" id="3" name="producto" value="accesorios" />
-          <label for="3" class="titles">Accesorios</label>
+            <input type="checkbox" id="2" name="producto" value="sillas" />
+            <label for="2" class="titles">Sillas</label>
 
-          <input type="checkbox" id="4" name="producto" value="componentes" />
-          <label for="4" class="titles">Componentes</label>
+            <input type="checkbox" id="3" name="producto" value="accesorios" />
+            <label for="3" class="titles">Accesorios</label>
 
-          <input type="checkbox" id="5" name="producto" value="ordenadores" />
-          <label for="5" class="titles" S>Ordenadores</label>
+            <input type="checkbox" id="4" name="producto" value="componentes" />
+            <label for="4" class="titles">Componentes</label>
 
-          <label class="mucho_texto2" for="espeficacion" class="titles">Especifique el producto:</label>
-          <textarea name="descripcionProduc" id="espeficacion" cols="30" rows="4"
-            placeholder="Especifique sus caracterisicas y el precio que desea"></textarea>
+            <input type="checkbox" id="5" name="producto" value="ordenadores" />
+            <label for="5" class="titles" S>Ordenadores</label>
+            <p class="formulario__input-error">Escoja una categoría!</p>
+          </div>
+
+          <div>
+            <label class="mucho_texto2" for="espeficacion" class="titles">Especifique el producto:</label>
+            <textarea name="descripcionProduc" id="espeficacion" cols="30" rows="4"
+              placeholder="Especifique sus caracterisicas y el precio que desea"></textarea>
+            <p class="formulario__input-error">Especifique el producto!</p>
+          </div>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="seccion4">
           <legend class="subtitulo">Pago:</legend>
           <h2>Manera de pago</h2>
 
-          <label for="sinpe" class="titles">Sinpe</label>
-          <input type="radio" value="Sinpe" name="pago" id="sinpe" />
+          <div id="form__pago">
+            <label for="sinpe" class="titles">Sinpe</label>
+            <input type="radio" value="Sinpe" name="pago" id="sinpe" />
 
-          <label for="credito" class="titles">Tarjeta Crédito</label>
-          <input type="radio" value="Tarjeta Credito" name="pago" id="credito" />
+            <label for="credito" class="titles">Tarjeta Crédito</label>
+            <input type="radio" value="Tarjeta Credito" name="pago" id="credito" />
 
-          <label for="debito" class="titles">Tarjeta Débito</label>
-          <input type="radio" value="Tarjeta debito" name="pago" id="debito" />
+            <label for="debito" class="titles">Tarjeta Débito</label>
+            <input type="radio" value="Tarjeta debito" name="pago" id="debito" />
 
-          <label for="efectivo" class="titles">Efectivo</label>
-          <input type="radio" value="efectivo" name="pago" id="efectivo" />
-
-          <label for="dia" class="titles">Fecha de entrega:</label>
-          <input type="date" />
+            <label for="efectivo" class="titles">Efectivo</label>
+            <input type="radio" value="efectivo" name="pago" id="efectivo" />
+          </div>
+          <p class="formulario__input-error">Especifique el producto!</p>
         </fieldset>
 
-        <div id="liveAlertPlaceholder"></div>
-        <button type="button" class="btn btn-primary" id="liveAlertBtn">Enviar</button>
+        <!-- Mensaje de error -->
+        <div class="form__mensaje" id="form__mensaje">
+          <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente.
+          </p>
+        </div>
+
+        <!-- Mensaje de "todo bien hecho" -->
+        <div class="form__grupo form__grupo-btn-enviar">
+          <button type="submit" class="formulario__btn">Enviar</button>
+          <p class="form__mensaje-exito" id="form__mensaje-exito">Formulario enviado exitosamente!</p>
+        </div>
 
       </form>
     </div>
@@ -221,23 +266,25 @@
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
 
+  <script src="/JS/formularios.js" type="text/javaScript" async></script>
 
-    <!-- Script (JS) para la función de cierre y mensaje de la alerta -->
-    <script>var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-      var alertTrigger = document.getElementById('liveAlertBtn')
-  
-      function alert(message, type) {
-        var wrapper = document.createElement('div')
-        wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
-  
-        alertPlaceholder.append(wrapper)
-      }
-  
-      if (alertTrigger) {
-        alertTrigger.addEventListener('click', function () {
-          alert('Gracias, su infomación fue enviada satisfactoriamente!!', 'success')
-          // success es para el color
-        })
-      }</script>
+  <!-- Script (JS) para la función de cierre y mensaje de la alerta -->
+  <script>var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+    var alertTrigger = document.getElementById('liveAlertBtn')
+
+    function alert(message, type) {
+      var wrapper = document.createElement('div')
+      wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+
+      alertPlaceholder.append(wrapper)
+    }
+
+    if (alertTrigger) {
+      alertTrigger.addEventListener('click', function () {
+        alert('Gracias, su infomación fue enviada satisfactoriamente!!', 'success')
+        // success es para el color
+      })
+    }</script>
 </body>
+
 </html>
