@@ -116,7 +116,7 @@
             <p class="formulario__input-error">Ingrese su nombre!</p>
           </div>
 
-          <div id="form__apellidos">
+          <div id="form__apellido">
             <label class=" subtitulo posicion1 form__label" for="surname">Apellidos:</label>
             <input type="text" id="surname" name="apellido" minlength="5" maxlength="20"
               placeholder="Escribe sus apellidos.." required />
@@ -131,13 +131,13 @@
 
           <div id="form__telefono">
             <label for="number" class="titles form__label">Número teléfonico:</label>
-            <input type="number" id="number" name="telefono" min="1" max="10" placeholder="8888-8888" required />
+            <input type="number" id="number" name="telefono" placeholder="8888-8888" required />
             <p class="formulario__input-error">Ingrese su teléfono!</p>
           </div>
 
-          <div id="form__email form__label">
-            <label for="email" class="titles">Email:</label>
-            <input type="email" name="correo" id="email" required />
+          <div id="form__correo">
+            <label for="email" class="titles form__label">Email:</label>
+            <input type="email" name="correo" id="email" placeholder="correo@correo.com" required />
             <p class="formulario__input-error">Ingrese su correo!</p>
           </div>
 
@@ -178,7 +178,7 @@
           <legend class="subtitulo">Productos a comprar:</legend>
           <h2>Clasificación del producto</h2>
 
-          <div>
+          <div id="perifericos">
             <input type="checkbox" id="1" name="producto" value="perifericos" />
             <label for="1" class="titles">Periféricos</label>
 
@@ -192,14 +192,14 @@
             <label for="4" class="titles">Componentes</label>
 
             <input type="checkbox" id="5" name="producto" value="ordenadores" />
-            <label for="5" class="titles" S>Ordenadores</label>
+            <label for="5" class="titles">Ordenadores</label>
             <p class="formulario__input-error">Escoja una categoría!</p>
           </div>
 
           <div>
             <label class="mucho_texto2" for="espeficacion" class="titles">Especifique el producto:</label>
             <textarea name="descripcionProduc" id="espeficacion" cols="30" rows="4"
-              placeholder="Especifique sus caracterisicas y el precio que desea"></textarea>
+              placeholder="Especifique sus caracterisicas y el precio que contiene"></textarea>
             <p class="formulario__input-error">Especifique el producto!</p>
           </div>
         </fieldset>
@@ -231,7 +231,7 @@
         </div>
 
         <!-- Mensaje de "todo bien hecho" -->
-        <div class="form__grupo form__grupo-btn-enviar">
+        <div class="form__grupo-btn-enviar">
           <button type="submit" class="formulario__btn">Enviar</button>
           <p class="form__mensaje-exito" id="form__mensaje-exito">Formulario enviado exitosamente!</p>
         </div>

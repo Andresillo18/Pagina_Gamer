@@ -1,11 +1,11 @@
-
-const formulario = document.getElementById('form');
+let formulario = document.getElementById('form');
 // Aquí se obtiene sobre todos los inputs y se hacen un arreglo
-const inputs = document.querySelectorAll('#form input');
+let inputs = document.querySelectorAll('#form input');
 
 const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{5,40}$/, // Letras y espacios, pueden llevar acentos.
 	apellido:  /^[a-zA-ZÀ-ÿ\s]{5,40}$/, 
+	id: /^.{5,15}$/, // 5 a 15 digitos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
 }
@@ -14,6 +14,7 @@ const expresiones = {
 const campos ={
 	nombre: false,
 	apellido: false,
+	id: false,
 	correo: false,
 	telefono: false
 }
@@ -27,6 +28,9 @@ const validarFormulario = (e) => {
 		break;
         case "apellido":
 			validarCampo(expresiones.nombre, e.target, 'apellido');
+		break;
+		case "Identificación":
+			validarCampo(expresiones.id, e.target, 'id');
 		break;
 		case "correo":
 			validarCampo(expresiones.correo, e.target, 'correo');
@@ -66,4 +70,28 @@ inputs.forEach((input) => {
 	input.addEventListener('keyup', validarFormulario);
 	// Cuando se selecccione fuera de la casilla
 	input.addEventListener('blur', validarFormulario);
+});
+
+// El parámetro e significa "evento"
+formulario.addEventListener('submit', (e) => {
+	// Esto evita que borreo la información del formulario
+	e.preventDefault();
+
+	// let perifericos = document.getElementById('perifericos');
+
+	// Revisa que todos las propiedades del objeto campos sean verdadero
+	if (campos.nombre && campos.apellido && campos.id && campos.correo && campos.telefono) {
+		console.log("Hola");
+		// El .reset() hace que todo se elimine 
+		formulario.reset();
+
+		document.getElementById('form__mensaje-exito').classList.add('form__mensaje-exito-activo');
+		// setTimeout establece algo despues de un tiempo, el primer parámetro es para la acción y el segundo para el tiempo
+		setTimeout(() => {
+			document.getElementById('form__mensaje-exito').classList.remove('form__mensaje-exito-activo');
+		}, 3500);
+
+	} else {
+		document.getElementById('form__mensaje').classList.add('form__mensaje-activo');
+	}
 });

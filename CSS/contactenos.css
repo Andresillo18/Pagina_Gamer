@@ -208,7 +208,7 @@ label.mucho_texto1{
 	font-size: 25px;
 	color: #119200;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	/* display: none; */
+	display: none;
 }
 .form__mensaje-exito-activo {
 	display: block;
